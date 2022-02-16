@@ -48,7 +48,7 @@
         </b>
     </div>
     <div class="container bg-dark text-white mb-3 py-3" style="border-radius: 10px;">
-        {% if question.answer == None %}
+        {% if question.answer|length == 0 %}
         Answer of this question will be available soon.
         {% else %}
         <pre></pre>
