@@ -7,6 +7,7 @@ class Question(models.Model):
 
     question = models.TextField()
     answer = RichTextField(null=True,blank = True)
+    approved = models.BooleanField(default=False)
 
 
     def __str__(self):

@@ -95,7 +95,7 @@
          <div id="question" class="mx-5 my-2 p-3">
              <a href="{% url 'answer' question.id %}" id="{{question.id}}" type="button" class="btn text-white" >
                  
-                {% if question.answer is not None %}
+                {% if question.answer|length != 0 %}
                 <i style="font-size:24px" class="fa">&#xf00c;</i>
                 {% endif %}
                 {{forloop.counter}} ) &nbsp; {{question.question}}
